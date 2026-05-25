@@ -2,13 +2,15 @@ import { useState } from 'react'
 import { Routes, Route, Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import { supabase } from '../supabase'
 import Projects from './dashboard/Projects'
+import ExperiencesDashboard from './dashboard/Experiences'
 import Certificates from './dashboard/Certificates'
 import Comments from './dashboard/Comments'
-import { FolderGit2, Award, MessageSquare, LogOut, LayoutDashboard, Menu } from 'lucide-react'
+import { FolderGit2, Award, MessageSquare, LogOut, LayoutDashboard, Menu, Briefcase } from 'lucide-react'
 
 const NAV_ITEMS = [
   { to: 'projects', label: 'Projects', icon: FolderGit2 },
   { to: 'certificates', label: 'Certificates', icon: Award },
+  { to: 'experiences', label: 'Experiences', icon: Briefcase },
   { to: 'comments', label: 'Comments', icon: MessageSquare },
 ]
 
@@ -126,6 +128,7 @@ export default function Dashboard() {
             <Route index element={<Navigate to="projects" replace />} />
             <Route path="projects" element={<Projects />} />
             <Route path="certificates" element={<Certificates />} />
+            <Route path="experiences" element={<ExperiencesDashboard />} />
             <Route path="comments" element={<Comments />} />
           </Routes>
         </main>

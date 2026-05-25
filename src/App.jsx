@@ -18,6 +18,8 @@ const ContactPage = lazy(() => import("./Pages/Contact"));
 const ProjectDetails = lazy(() => import("./components/ProjectDetail"));
 const WelcomeScreen = lazy(() => import("./Pages/WelcomeScreen"));
 const NotFoundPage = lazy(() => import("./Pages/404"));
+const ExperiencesPage = lazy(() => import("./Pages/Experiences"));
+const ExperienceDetails = lazy(() => import("./components/ExperienceDetail"));
 
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
@@ -38,6 +40,7 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
           <About />
           <Suspense fallback={<div className="h-20" />}>
             <Portofolio />
+            <ExperiencesPage />
             <ContactPage />
           </Suspense>
           <Footer />
@@ -79,6 +82,13 @@ function App() {
           />
 
           <Route path="/project/:slug" element={<ProjectPageLayout />} />
+
+          <Route path="/experience/:slug" element={
+            <>
+              <Suspense fallback={<div className="min-h-screen bg-[#030014]" />}><ExperienceDetails /></Suspense>
+              <Footer />
+            </>
+          } />
 
           {/* AUTH */}
           <Route path="/login" element={<Login />} />

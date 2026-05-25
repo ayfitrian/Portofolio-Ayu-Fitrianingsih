@@ -24,7 +24,7 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Frontend
+          Full-Stack
         </span>
       </span>
       <br />
@@ -76,12 +76,12 @@ const SocialLink = memo(({ icon: Icon, link, label }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Network & Telecom Student", "Tech Enthusiast"];
-const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
+const WORDS = ["Informatics Undergraduate", "Web & App Developer", "Digital Innovation"];
+const TECH_STACK = ["Full-Stack", "Laravel", "Flutter", "Web Development", "UI Design"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/EkiZR", label: "GitHub Profile" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ekizr/", label: "LinkedIn Profile" },
-  { icon: Instagram, link: "https://www.instagram.com/ekizr_/?hl=id", label: "Instagram Profile" }
+  { icon: Github, link: "https://github.com/ayfitrian", label: "GitHub Profile" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/ayufitrianingsih/", label: "LinkedIn Profile" },
+  { icon: Instagram, link: "https://www.instagram.com/_ayfitriann?igsh=MWRtaWtuYmV1dXlvYw==", label: "Instagram Profile" }
 ];
 
 const Home = () => {
@@ -140,25 +140,25 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Eki Zulfar Rachman — Frontend Web Developer</title>
-        <meta name="description" content="Website resmi Eki Zulfar Rachman, Front-End Web Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan." />
+        <title>AYFITRIANN — Full-Stack Developer</title>
+        <meta name="description" content="Website resmi Ayu Fitrianingsih, Full-Stack Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan." />
      <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://ekizr.com" />
-        <meta property="og:title" content="Eki Zulfar Rachman — Frontend Web Developer" />
-     <meta property="og:description" content="Website resmi dan portofolio Eki Zulfar Rachman, Front-End Web Developer." />
-        <meta property="og:url" content="https://ekizr.com" />
+        <link rel="canonical" href="AYFITRIANN — Full-Stack Developer" />
+        <meta property="og:title" content=" " />
+     <meta property="og:description" content="Website resmi dan portofolio Ayu Fitrianingsih, Full-Stack Developer." />
+        <meta property="og:url" content=" " />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Eki Zulfar Rachman",
-            "jobTitle": "Frontend Developer",
-            "url": "https://ekizr.com",
+            "name": "Ayu Fitrianingsih",
+            "jobTitle": "Full-Stack Developer",
+            "url": " ",
             "sameAs": [
-              "https://github.com/EkiZR",
-              "https://www.linkedin.com/in/ekizr/",
-              "https://www.instagram.com/ekizr_/"
+              "https://github.com/ayfitrian",
+              "https://www.linkedin.com/in/ayufitrianingsih/",
+              "https://www.instagram.com/_ayfitriann?igsh=MWRtaWtuYmV1dXlvYw=="
             ]
           }
         `}</script>
@@ -188,7 +188,7 @@ const Home = () => {
                   <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                     data-aos="fade-up"
                     data-aos-delay="1000">
-                    Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.
+                    Membangun solusi digital yang modern, inovatif, dan user-friendly.
                   </p>
 
                   {/* Tech Stack */}
@@ -200,8 +200,8 @@ const Home = () => {
 
                   {/* CTA Buttons */}
                   <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
-                    <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} />
-                    <CTAButton href="#Contact" text="Contact" icon={Mail} />
+                    <CTAButton href="#Portofolio" text="View My Projects" icon={ExternalLink} />
+                    <CTAButton href="#Contact" text="Contact Me" icon={Mail} />
                   </div>
 
                   {/* Social Links */}
